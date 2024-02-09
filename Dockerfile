@@ -1,4 +1,3 @@
-# Use an official base image (e.g., a lightweight Linux distribution)
 FROM python:3.9
 RUN apt update
 RUN apt install -y python3-pip

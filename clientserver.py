@@ -12,5 +12,5 @@ class DuplicationClient:
 
     def check_if_duplicate_and_add(self, filename: str) -> bool:
         self.__socket.send(msgpack.dumps(filename))
-        print(f"FLAG 22: From duplication client with file name{filename}")
+        print(f"FLAG 22: From duplication client with file name {filename}")
         return bool(self.__socket.recv())
